@@ -34,3 +34,37 @@ while True:
     i += 1
     if i == 2:
         break
+
+# d = dict()
+d = {1: 20, 2: 30, 3: 'sfasdaf', 'key': ['one', 'two']}
+d.update({'key_2': 'strfghhvb'})
+d.pop('key_2')
+# d['key_3'] = {3, 5, 50}
+print(list(d.keys()))
+print()
+print(list(d.values()))
+print()
+print(list(d.items()))
+print()
+print(d)
+print()
+
+s = ['a', 34, 'a', 'b']
+print(s)
+print(list(set(s)))
+
+if 'key_2' in d.keys():
+    print(d['key_2'])
+elif 'key_3' in d.keys():
+    print('key_3 exists')
+else:
+    print('No such key!')
+
+print()
+
+a = 3
+b = 3
+c = 4
+if (a == b) | (c > a):
+    print('Excellent')
+
